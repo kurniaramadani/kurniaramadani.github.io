@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+</head>
+<body>
+	<p>Masukkan sebuah kalimat</p>
+	<textarea id="input" cols="80" row="40"></textarea>
+	<P>
+		<script type="text/javascript">
+			
+			function WordCount(){ 
+	 			var input = document.getElementById("input").value;
+	 			var arrayLines = input.split(" ");
+	 			
+	 			for(var i=0;i<arrayLines.length;i++){
+	 				document.write("Baris ke "+(i+1)+" : "+arrayLines[i]+"<br/>");
+	 			}
+	 	document.write("<br/>"+"jumlah kata : "+(i));	
+			}
+		</script>
+	</P>
+	<button onclick="WordCount()">Submit</button>
+</body>
+</html>
