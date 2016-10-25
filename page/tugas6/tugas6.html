@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+
+<script type="text/javascript">
+ 		function validasi(){
+ 		var cek = document.forms["cekangka"]["angka"].value;
+   if (!/^[0-9,]+$/.test(cek))
+   {
+      alert("Field harus memiliki karakter numerik !!!");
+      cekangka.angka.focus();
+      return false;
+   }
+ 		}
+ 	</script>
+
+</head>
+<body>
+<p>Masukkan Angka dengan di pisah dengan koma</p>
+<P>contoh : 3,4,67,5,2,3,4,66, . . . . </P>
+
+<form action="tugas6.php" method="get" name="cekangka" onSubmit="return validasi()">
+ 	<input type="text" name="angka" placeholder="masukkan angka" id="angka"></input><br/>
+ 	<input type="submit" value="proses"></input>
+
+ 	
+</form>
+<!---->
+</body>
+</html>
